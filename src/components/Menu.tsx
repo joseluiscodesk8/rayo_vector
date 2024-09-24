@@ -18,7 +18,7 @@ const Menu: React.FC = () => {
 
       <picture className={styles.logo}>
         <Image 
-          src="/Comp.gif"  
+          src="/prueba.gif"  
           alt="Logo"
           width={80}  
           height={80}

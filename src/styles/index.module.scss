@@ -1,56 +1,95 @@
-.header {
+@use "./components/Menu";
+
+.buttonBranding {
+    width: 100%;
+}
+
+.accordion {
+    overflow: hidden;
+  }
+
+.branding {
   display: flex;
-  justify-content: space-between; /* Espacio entre el logo y el ícono */
-  align-items: center;
-  position: relative;
-  width: 100%;
-  z-index: 1000;
-}
-
-.logo {
-  position: relative;
-  z-index: 10000;
-  flex: 1;
-}
-
-.icon {
-  cursor: pointer;
-  z-index: 1100;
-  transform: translate(0, -15px);
-}
-
-.nav {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100vh; 
-  background-color: #333;
-  box-shadow: inset 0 -55px 55px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  transition: top 0.5s ease;
+  transform: translate(0, 20px);
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-
-    li {
-      margin: 20px 0;
-
-      a {
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-
-        &:hover {
-          color: #0070f3; /* Cambia el color cuando el cursor pasa sobre el enlace */
-        }
-      }
-    }
+  & picture {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #000;
   }
 }
+
+.buttonWeb {
+    width: 100%;
+    transform: translate(0, 20px);
+}
+
+
+.web {
+  display: flex;
+  flex-direction: column;
+  transform: translate(0, 40px);
+
+  & picture {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #000;
+  }
+}
+
+.buttonAudio {
+    width: 100%;
+    transform: translate(0, 40px);
+}
+
+.audio {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0, 60px);
+  
+    & picture {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #000;
+    }
+  }
+
+.buttonSocial {
+    width: 100%;
+    transform: translate(0, 60px);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0, 80px);
+  
+    & picture {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #000;
+    }
+  }
+
+.buttonImpresion {
+    width: 100%;
+    transform: translate(0, 80px);
+}
+
+.impresion {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0, 100px);
+  
+    & picture {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #000;
+    }
+  }
