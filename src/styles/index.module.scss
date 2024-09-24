@@ -2,28 +2,31 @@
   display: flex;
   justify-content: space-between; /* Espacio entre el logo y el ícono */
   align-items: center;
-//   padding: 20px;
   position: relative;
   width: 100%;
   z-index: 1000;
 }
 
 .logo {
-  flex: 1; /* La imagen toma el espacio necesario a la izquierda */
+  position: relative;
+  z-index: 10000;
+  flex: 1;
 }
 
 .icon {
   cursor: pointer;
   z-index: 1100;
+  transform: translate(0, -15px);
 }
 
 .nav {
   position: fixed;
-  top: -100%; /* Inicialmente fuera de la pantalla */
+  top: -100%;
   left: 0;
   width: 100%;
-  height: 100vh; /* Ocupa toda la pantalla cuando se muestra */
+  height: 100vh; 
   background-color: #333;
+  box-shadow: inset 0 -55px 55px #000;
   display: flex;
   justify-content: center;
   align-items: center;

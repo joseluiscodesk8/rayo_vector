@@ -16,15 +16,15 @@ const Menu: React.FC = () => {
   return (
     <header className={styles.header}>
 
-      <div className={styles.logo}>
+      <picture className={styles.logo}>
         <Image 
-          src="/ichip-01.png"  
+          src="/Comp.gif"  
           alt="Logo"
-          width={50}  
-          height={50}
+          width={80}  
+          height={80}
           priority  
         />
-      </div>
+      </picture>
 
     
       <div className={styles.icon} onClick={toggleMenu}>
