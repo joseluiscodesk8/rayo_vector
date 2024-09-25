@@ -22,7 +22,8 @@ const Menu: React.FC = () => {
           alt="Logo"
           width={80}  
           height={80}
-          priority  
+          priority
+          unoptimized  
         />
       </picture>
 
